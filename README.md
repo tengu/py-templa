@@ -3,9 +3,13 @@ templa.py: Template rendering command
 
 Render various string formatting and template using json parameters.
 
-Usage: templa.py render_jinja2 template-file < params.json
+* Usage: `templa.py render_jinja2 template-file < params.json`
+* Supported formats: python's builtin % and {} formatting. Optionally `jinja2`.
+* Dependency:
+** `baker`
+** `jinja2` if you want to render using this engine.
 
-Example:
+* Example:
 ```
 $ cat > nginx-proxy.config.template<<END
 server {
